@@ -1,7 +1,7 @@
 # Minimal Repository Demonstrating SBOM / SCA Scanning
 
 * Scanning is done through a [GitHub action](./.github/workflows/scan.yml).
-* You can see the action runs in the [Actions View](https://github.com/ethan42/sbom-sca-scanner/actions).
+* You can see the action runs in the [Actions View](https://github.com/EncodedMind/sbom-sca-scanner-main/actions).
 * You can view Security findings under Security -> Code Scanning (note: you need to have collaborator access to see these findings).
 
 ## Configuration

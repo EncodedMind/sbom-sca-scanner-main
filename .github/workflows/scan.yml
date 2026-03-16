@@ -8,7 +8,7 @@ on:
         docker_image:
           description: 'The Docker image to scan'
           required: true
-          default: 'ghcr.io/ethan42/sbom-sca-scanner:latest'
+          default: 'ghcr.io/encodedmind/sbom-sca-scanner-main:latest'
 
 # env:
 #   REGISTRY: ghcr.io
