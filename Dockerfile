@@ -1,5 +1,11 @@
-FROM alpine
+FROM node:20-alpine
 
-RUN apk add gcc make git linux-headers musl-dev
+RUN apk add git
 
-RUN git clone https://github.com/HewlettPackard/wireless-tools/ && cd wireless-tools/wireless_tools && make CFLAGS='-Wno-error -Wno-implicit-function-declaration -Wno-int-conversion'
+RUN git clone https://github.com/EncodedMind/E-Shop-React.git && cd E-Shop-React/server && npm install
+
+EXPOSE 4000
+
+WORKDIR /E-Shop-React/server
+
+CMD ["npm", "start"]
